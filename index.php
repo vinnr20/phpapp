@@ -5,7 +5,7 @@ $dbuser = getenv("userD5T");
 $dbpwd = getenv("redhat123");
 $dbname = getenv("testing");
 
-$connection = new mysqli($dbhost, $dbport, $dbuser, $dbpwd, $dbname);
+$connection = mysqli_connect($dbhost, $dbport, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
     exit();
@@ -13,5 +13,4 @@ if ($connection->connect_errno) {
     printf("Connected to the database ");
     echo $dbname;
 }
-$connection->close();
 ?>
