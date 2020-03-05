@@ -5,7 +5,7 @@ $dbuser = "userD5T";
 $dbpwd = "redhat123";
 $dbname = "testing";
 
-$connection = mysqli_connect($dbhost, $dbport, $dbuser, $dbpwd, $dbname);
+$connection = mysql_connect($dbhost, $dbport, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
     exit();
