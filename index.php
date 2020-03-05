@@ -1,6 +1,6 @@
 <?php
 $dbhost = getenv("MYSQL_SERVICE_HOST");
-$dbport = getenv("MYSQL_SERVICE_PORT");
+$dbport = getenv(3306);
 $dbuser = getenv("userD5T");
 $dbpwd = getenv("redhat123");
 $dbname = getenv("testing");
